@@ -1,0 +1,30 @@
+clc;
+clear all;
+T0=4;
+T=0.4;
+A=1;
+N=200;
+for n=1:N,
+  c(n+N+1)=1/(n*pi)*sin(n*pi*T/T0);
+end
+c(N+1)=0.1;
+for n=1:N,
+c(n)=c((2*N+2)-n);
+end
+
+stem(c);
+
+title('plot mag of D.T signal');
+xlabel('coefficient no');
+ylabel('amp');
+figure;
+t=-N:1:N;
+subplot(2,1,1);
+stem(t,c);
+x1=ifft(c);
+x1=ifftshift(x1);
+subplot(2,1,2);
+plot(abs(x1));
+title('plot mag of recovered signal');
+xlabel('sample no');
+ylabel('amp');

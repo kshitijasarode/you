@@ -1,0 +1,15 @@
+% Step Function
+n=-5:5;
+x=(n>=0);
+%xlim([-6,6]);
+%ylim([-0.1,1.1]);
+subplot(3,1,2);
+stem(n,x,'Markersize',5);
+
+% Ramp Function
+n=-5:5;
+x=n.*(n>=0);
+xlim([n(1)-1,n(1)+1]);
+ylim([-0.1,1.1]);
+subplot(3,1,3);
+stem(n,x,'Markersize',5);

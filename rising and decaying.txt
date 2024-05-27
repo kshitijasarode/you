@@ -1,0 +1,14 @@
+clear all;
+close all;
+clc;
+t=0:0.1:5;
+k=1;
+a=0.35;
+x1=k*exp(0.35*t);
+subplot (2,1,1);
+plot(t,x1);
+k=1;
+a=-0.45;
+x2=k*exp(-0.45*t);
+subplot(2,1,2);
+plot(t,x2);

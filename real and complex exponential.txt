@@ -1,0 +1,17 @@
+% Real Exp Function
+% n=-5:5;
+% a=1;
+% x=exp(a*n);
+%xlim([n(1)-1,n(1)+1]);
+%ylim([-0.1,1.1]);
+%subplot(4,1,4);
+%stem(n,x,'Markersize',5);
+
+% Complex Exp Function
+%n=-5:0.01:50;
+%a=2;
+%x=exp((2+3j)*n);
+%xlim([n(1)-1,n(1)+1]);
+%ylim([-0.1,1.1]);
+%subplot(4,1,4);
+%stem(n,x,'Markersize',5);

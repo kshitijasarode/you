@@ -1,0 +1,14 @@
+clc;
+clear all;
+close all;
+t=0:0.1:5; x=sin(2*pi*t);
+xf=fliplr(x);subplot(2,1,1);
+plot(x);
+title('original signal');
+xlabel('time');
+ylabel('amplitude');
+subplot(2,1,2);
+plot(xf);
+title('folded signal');
+xlabel('time'); 
+ylabel('amplitude');

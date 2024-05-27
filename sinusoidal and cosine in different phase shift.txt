@@ -1,0 +1,42 @@
+clear all;
+close all;
+clc;
+t=0:0.001:0.1;
+x=sin(200*pi*t);
+subplot(3,2,1);
+plot(t,x);
+title('sin wave of 100hz');
+xlabel('time');
+ylabel('amplitude');
+x1=sin(200*pi*t+pi/6);
+subplot(3,2,2);
+plot(t,x1)
+title('sin wave of 100hz');
+xlabel('time')
+ylabel('amplitude');
+x2=sin(200*pi*t-pi/4);
+subplot(3,2,3);
+plot(t,x2)
+title('sin wave of 100hz');
+xlabel('time')
+ylabel('amplitude');
+x3=cos(200*pi*t);
+subplot(3,2,4);
+plot(t,x3)
+title('cos wave of 100hz');
+xlabel('time')
+ylabel('amplitude');
+x4=cos (200*pi*t+pi/2);
+subplot (3,2,5);
+plot(t,x4)
+title('cos wave of 100hz');
+xlabel('time')
+ylabel('amplitude');
+x5=cos (200*pi*t-pi/4);
+subplot (3,2,6);
+plot(t,x5)
+title('cos wave of 100hz');
+xlabel('time')
+ylabel('amplitude')
+
+
